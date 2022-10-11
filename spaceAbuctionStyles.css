@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#pic1 {
+    position: absolute;
+    left: 10%;
+    top: -40px;
+}
+
+#pic2 {
+    position: absolute;
+    left: 10%;
+    top: 48%;
+}
+
+#pic3 {
+    position: absolute;
+    left: 16%;
+    top: 30%;
+}
+.container 
+{
+    width: min(100% - 15px, 100%);
+    margin-inline: auto;
+    border: 1px solid black;
+    height: 550px;
+    position: relative;
+    background-color: darkred;
+}
+
+#leftButton
+{
+    position: absolute;
+    bottom: 5%;
+    font-size: 5rem;
+    color: black;
+    cursor: crosshair;
+}
+
+
+#rightButton
+{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    font-size: 5rem;
+    color: black;
+    cursor: crosshair;
+}
+
+#checkButton
+{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 5rem;
+    color: black;
+    cursor: crosshair;
+}
+
+#xButton
+{
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    font-size: 5rem;
+    color: black;
+    cursor: crosshair;
+}
+
+#inputField
+{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    border-radius: 50%;
+    height: 80px;
+    width: min(45% - 15px);
+    font-size: xx-large;
+    text-align: center;
+}
+
+.gameTitle
+{
+    position: absolute;
+    font-size: 50px;
+    left: 38%;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+.gameScreen
+{
+    border: solid 1px white;
+    height: 25rem;
+    background-color: black;
+    left: -100px;
+    position: relative;
+    left: auto;
+}
+
+#gameText
+{
+    font-size: large;
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    font-size: 4rem;
+}
+
+#gameTextDefinition
+{
+    position: absolute;
+    color: white;
+    width: auto;
+    justify-content: center;
+    left: 25%;
+    bottom: 10%;
+    font-size: 2rem;
+}
+
+#gameDescriptionB {
+    color: white;
+    position: absolute;
+    top: 10vh;
+    right: 5vh;
+    font-size: 30px;
+    width: 30%;
+    visibility: hidden;
+}
+
+#spaceGameDefinition {
+    color: white;
+    position: absolute;
+    top: 10vh;
+    right: 5vh;
+    font-size: 30px;
+    width: 30%;
+}
+
+#navItem {
+    text-decoration-line: none;
+    color: white;
+    font-size: 30px;
+}
+
+#navContainer {
+    text-align: right;
+    position: relative;
+}
+
+.firstGame {
+    margin-right: 50px;
+}
+
+.moreGames {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    right: 480px;
+}
+
+#spaceAbducContainer {
+    font-size: 32px;
+    position: absolute;
+    border: white solid 1px;
+    background-color: white;
+    height: 125px;
+    width: 475px;
+    left: 40%;
+    top: 15%;
+    z-index: 1;
+    overflow: hidden;
+    display: table;
+    text-align: center;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+#spaceAbducAnswers {
+    display: table-cell;
+    vertical-align: middle;
+}

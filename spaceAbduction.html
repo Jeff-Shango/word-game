@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Abduction</title>
+    <script src="https://kit.fontawesome.com/08f42986f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="spaceAbuctionStyles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container"> 
+        <div class="gameboxContainer">
+            <nav id="navContainer">
+                <p class="moreGames">More Games:</p>
+                <a href="index.html" class="firstGame" id="navItem">Match The Words
+                </a>
+                <a href="#" id="navItem" class="secondGame">Make A Story</a>
+            </nav>
+            <div class="gameTitle">Space Abduction</div>
+            <div class="gameScreen">
+                <p id="gameDescriptionB">Guess The word based off of the definition.<br> Enter Letters within the text-box, to guess the word.<br>Be Careful as the more incorrect guesses you have, the spaceship will appear.</p>
+                <p id="spaceGameDefinition">This is the definition</p>
+                <div id="spaceAbducContainer">
+                    <div id="spaceAbducAnswers"><p id="spaceText">hello</p></div>
+                </div>
+                <img src="ufo.png" alt="oh shit" id="pic1">
+                <img src="spaceman.png" alt="oh shit" id="pic2">
+                <img src="spaceRayBolt.png" alt="oh shit" id="pic3">
+            </div>    
+            <a href="#"><i id="leftButton" class="fa fa-arrow-left" type="button" ></i></a> 
+            <a href="#"><i id="rightButton" class="fa fa-arrow-right" type="button" ></i></a>
+            <a href="#"><i id="checkButton" class="fa-solid fa-check" type="button"></i></a>
+            <a href="#"><i id="xButton" class="fa-solid fa-xmark"></i></a>
+            <input type="text" id="inputField">
+        </div>
+    </div>
+    <script src="spaceSetup.js" type="module"></script>
+    <script src="spaceAnswers.js" type="module"></script>
+    <script src="spaceInput.js" type="module"></script>
+</body>
+</html>
