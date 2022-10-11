@@ -1,14 +1,17 @@
 import { answers  } from "./answers.js";
+export const nextButton = document.getElementById('rightButton').addEventListener ("click", next);
+export const previousButton = document.getElementById('leftButton').addEventListener("click", previous);
+export const displayText = document.getElementById('gameText');
+export const displayDefinition = document.getElementById('gameTextDefinition');
+export let currentText = 0;
+export let currentDefinition = 0;
+export let currentId = answers[0].word;
+export let currentIdB = answers[0].definition;
 
 
-const displayText = document.getElementById('gameText');
-const displayDefinition = document.getElementById('gameTextDefinition');
-let currentText = 0;
-let currentDefinition = 0;
-let currentId = answers[0].word;
-let currentIdB = answers[0].definition;
-const nextButton = document.getElementById('rightButton').addEventListener ("click", move, true)
 
+
+console.log(currentId)
 for (let i = 0; i < answers.length; i++) {
     displayText.innerHTML = JSON.stringify(answers[0].word);
 }
@@ -19,20 +22,22 @@ for (let i = 0; i < answers.length; i++) {
 
 log();
 
-// function next()
-// {
-//     move();
-// }
-
-// function previous()
-// {   
-//     move(false);
-// }
-
-
-
-function move(advance = true)
+export function next()
 {
+    move();
+}
+
+export function previous()
+{   
+    move(false);
+}
+
+
+
+
+export function move(advance = true)
+{
+
     currentText = (currentText + (advance ? 1 : -1) + answers.length) % answers.length;
     currentId = answers[currentText].word;
 
@@ -41,12 +46,19 @@ function move(advance = true)
 
     displayText.innerHTML = JSON.stringify(currentId);
     displayDefinition.innerHTML = JSON.stringify(currentIdB);
+
+    
+
+    // previousText = (currentText + (advance ? 1: -1) + answers.length) % answers.length;
+    // previousId = answers[previousText].word;
+
+    // previousDefinition = (currentDefinition + (advance ? 1 : -1) + answers.length) % answers.length;
+    // previousIdB = answers[previousIdB].definition;
     log();
 }
 
-function log()
+export function log()
 {
     console.log("Word: " + currentText,
     currentId);
 }
-
