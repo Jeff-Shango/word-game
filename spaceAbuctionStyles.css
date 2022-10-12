@@ -184,3 +184,8 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+#spaceAbducLetters {
+    border: 1px solid white;
+
+}

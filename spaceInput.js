@@ -13,37 +13,38 @@ inputBox.onkeyup = function() {
 };
 
 function checkLetters() {
-switch (checkLetters) {
+switch (inputBox.value) {
     case 's':
-        console.log('s');
-        break;
+        console.log('s'),
+        clear();
     case 't':
-        console.log('t');
-        break;
+        console.log('t'),
+        clear();
     case 'r':
-        console.log('r');
-        break;
-    
+        console.log('r'),
+        clear();
     case 'a':
-        console.log('a');
-        break;
+        console.log('a'),
+        clear();
     case 'w':
-        console.log('w');
-        break;
+        console.log('w'),
+        clear();
     case 'b':
-        console.log('b');
-        break;
+        console.log('b'),
+        clear();
     case 'e':
-        console.log('e');
-        break;
+        console.log('e'),
+        clear();
     case 'r':
-        console.log('r');
-        break;
+        console.log('r'),
+        clear();
     case 'y':
-        console.log('y');
+        console.log('y'),
+        clear();
         break;
     default:
-        console.log('not a letter');                                                                                                                            
+        console.log('not a letter'),
+        clear();
 };
 };
 
