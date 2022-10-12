@@ -3,7 +3,7 @@ export const spaceAnswers =
     {
         displayAnswer: "Strawberry",
         answer: [['s'], ['t'], ['r'], ['a'], ['w'], ['b'], ['e'], ['r'], ['r'], ['y']],
-        defintiion: " red fruit with a seed-studded surface.",
+        definition: "red fruit with a seed-studded surface.",
         answerInput: "_ _ _ _ _ _ _ _ _ _"
     },
 

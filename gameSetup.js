@@ -9,8 +9,6 @@ export let currentId = answers[0].word;
 export let currentIdB = answers[0].definition;
 
 
-
-
 console.log(currentId)
 for (let i = 0; i < answers.length; i++) {
     displayText.innerHTML = JSON.stringify(answers[0].word);
