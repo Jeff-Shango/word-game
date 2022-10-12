@@ -1,13 +1,18 @@
+import { spaceAnswers } from "./spaceAnswers.js";
 import { answer, next } from "./spaceSetup.js";
 
 export const check = document.getElementById('inputField').innerText;
 export const enterButton = document.getElementById('checkButton').click();
 export let inputBox = document.getElementById('inputField');
+export let realAnswer = spaceAnswers[0].answer;
 
 inputBox.onkeyup = function() {
     console.log(inputBox.value);
     checkAnswer();
+    checkLetters();
 };
+
+
 
 function checkAnswer(){
     if (inputBox.value.toLowerCase()  == answer.toLowerCase()) {
@@ -30,3 +35,4 @@ function clear(){
         inputBox.value = "";
     }
 }
+
