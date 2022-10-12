@@ -12,49 +12,64 @@ inputBox.onkeyup = function() {
     console.log(checkLetters());
 };
 
-function testBoolean(){
-    if (checkLetters === true) {
-        console.log("is true");
-    } else {
-        console.log("is not true");
-    }
-};
-
 function checkLetters() {
 switch (inputBox.value) {
     case 's':
-        console.log('s'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 't':
-        console.log('t'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'r':
-        console.log('r'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'a':
-        console.log('a'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'w':
-        console.log('w'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'b':
-        console.log('b'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'e':
-        console.log('e'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'r':
-        console.log('r'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
+        break;
     case 'y':
-        console.log('y'),
-        clear();
+        console.log('is a letter'),
+        clear(),
+        displayAnswer();
         break;
     default:
         console.log('not a letter'),
         clear();
 };
 };
+
+function displayAnswer() {
+    for (i = 0; i < 0; i++) {
+        
+    }
+}
 
 // switch (checkLetters) {
 //     case 0:
