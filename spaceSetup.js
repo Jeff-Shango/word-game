@@ -27,12 +27,12 @@ for (let i = 0; i < spaceAnswers.length; i++) {
 
 log();
 
-function next()
+export function next()
 {
     move();
 }
 
-function previous()
+export function previous()
 {   
     move(false);
 }
