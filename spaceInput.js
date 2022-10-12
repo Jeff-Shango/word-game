@@ -1,7 +1,7 @@
 import { spaceAnswers } from "./spaceAnswers.js";
 import { answer, currentId, next } from "./spaceSetup.js";
 
-
+export const letterBox = document.getElementById('correctLetters');
 export const check = document.getElementById('inputField').innerText;
 export const enterButton = document.getElementById('checkButton').click();
 export let inputBox = document.getElementById('inputField');
@@ -10,6 +10,14 @@ inputBox.onkeyup = function() {
     console.log(inputBox.value);
     checkAnswer();
     console.log(checkLetters());
+};
+
+function testBoolean(){
+    if (checkLetters === true) {
+        console.log("is true");
+    } else {
+        console.log("is not true");
+    }
 };
 
 function checkLetters() {
