@@ -9,12 +9,43 @@ export let realAnswer = spaceAnswers[0].answer;
 inputBox.onkeyup = function() {
     console.log(inputBox.value);
     checkAnswer();
+    console.log(checkLetters());
 };
 
+function checkLetters() {
 switch (checkLetters) {
     case 's':
-        console.log("s")
-}
+        console.log('s');
+        break;
+    case 't':
+        console.log('t');
+        break;
+    case 'r':
+        console.log('r');
+        break;
+    
+    case 'a':
+        console.log('a');
+        break;
+    case 'w':
+        console.log('w');
+        break;
+    case 'b':
+        console.log('b');
+        break;
+    case 'e':
+        console.log('e');
+        break;
+    case 'r':
+        console.log('r');
+        break;
+    case 'y':
+        console.log('y');
+        break;
+    default:
+        console.log('not a letter');                                                                                                                            
+};
+};
 
 // switch (checkLetters) {
 //     case 0:
@@ -33,7 +64,6 @@ function checkAnswer(){
         console.log("Success");
         success();
         clear();
-        checkLetters();
     } else {
         console.log("OH MY GAWD")
     };
@@ -50,4 +80,3 @@ function clear(){
         inputBox.value = "";
     }
 }
-
