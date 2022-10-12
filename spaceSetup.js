@@ -18,7 +18,7 @@ console.log(answer);
 console.log(currentIdB);
 console.log(spaceAnswers[0].answerInput)
 for (let i = 0; i < spaceAnswers.length; i++) {
-    displayText.innerHTML = JSON.stringify(spaceAnswers[0].answer);
+    displayText.innerHTML = JSON.stringify(spaceAnswers[0].answerInput);
 }
 
 for (let i = 0; i < spaceAnswers.length; i++) {
