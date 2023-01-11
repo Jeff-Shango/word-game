@@ -31,12 +31,23 @@ export function previous()
 {   
     move(false);
 }
+export function next()
+{
+    move();
+}
+
+export function previous()
+{   
+    move(false);
+}
 
 
 
 
 export function move(advance = true)
+export function move(advance = true)
 {
+
 
     currentText = (currentText + (advance ? 1 : -1) + answers.length) % answers.length;
     currentId = answers[currentText].word;
@@ -54,9 +65,18 @@ export function move(advance = true)
 
     // previousDefinition = (currentDefinition + (advance ? 1 : -1) + answers.length) % answers.length;
     // previousIdB = answers[previousIdB].definition;
+
+    
+
+    // previousText = (currentText + (advance ? 1: -1) + answers.length) % answers.length;
+    // previousId = answers[previousText].word;
+
+    // previousDefinition = (currentDefinition + (advance ? 1 : -1) + answers.length) % answers.length;
+    // previousIdB = answers[previousIdB].definition;
     log();
 }
 
+export function log()
 export function log()
 {
     console.log("Word: " + currentText,
