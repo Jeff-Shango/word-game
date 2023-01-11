@@ -14,17 +14,20 @@
         <div class="gameboxContainer">
             <nav id="navContainer">
                 <p class="moreGames">More Games:</p>
-                <a href="#" class="firstGame" id="navItem">Match The Words
+                <a href="index.html" class="firstGame" id="navItem">Match The Words
                 </a>
                 <a href="#" id="navItem" class="secondGame">Make A Story</a>
             </nav>
             <div class="gameTitle">Space Abduction</div>
             <div class="gameScreen">
-                <p id="gameDescriptionB">In this mode, you will Guess The word based off of the definition.<br> Enter Letters within the Boxes, to guess the word.<br>Be Careful as you don't want the spaceship to appear.</p>
-                <div class="spaceAbducContainer">
-                    <canvas id="spaceCanvas-ship"></canvas>
-                    <canvas id="spaceCanvas-blasterA"></canvas>
+                <p id="gameDescriptionB">Guess The word based off of the definition.<br> Enter Letters within the text-box, to guess the word.<br>Be Careful as the more incorrect guesses you have, the spaceship will appear.</p>
+                <p id="spaceGameDefinition">This is the definition</p>
+                <div id="spaceAbducContainer">
+                    <div id="spaceAbducAnswers"><p id="spaceText">hello</p></div>
                 </div>
+                <img src="ufo.png" alt="oh shit" id="pic1">
+                <img src="spaceman.png" alt="oh shit" id="pic2">
+                <img src="spaceRayBolt.png" alt="oh shit" id="pic3">
             </div>
             <a href="#"><i id="leftButton" class="fa fa-arrow-left" type="button" ></i></a> 
             <a href="#"><i id="rightButton" class="fa fa-arrow-right" type="button" ></i></a>
@@ -33,10 +36,7 @@
             <input type="text" id="inputField">
         </div>
     </div>
-    <script src="gameSetup.js" type="module"></script>
-    <script src="answers.js" type="module"></script>
-    <script src="input.js" type="module"></script>
-    <script src="spaceSetup.js"></script>
-
+    <script src="spaceSetup.js" type="module"></script>
+    <script src="spaceAnswers.js" type="module"></script>
 </body>
 </html>
