@@ -12,13 +12,13 @@ export let currentIdB = answers[0].definition;
 
 
 console.log(currentId)
-for (let i = 0; i < answers.length; i++) {
+for (const _element of answers) {
     displayText.innerHTML = JSON.stringify(answers[0].word);
-}
+};
 
-for (let i = 0; i < answers.length; i++) {
+for (const _element of answers) {
     displayDefinition.innerHTML = JSON.stringify(answers[0].definition);
-}
+};
 
 log();
 
@@ -31,20 +31,11 @@ export function previous()
 {   
     move(false);
 }
-export function next()
-{
-    move();
-}
-
-export function previous()
-{   
-    move(false);
-}
 
 
 
 
-export function move(advance = true)
+
 export function move(advance = true)
 {
 
@@ -60,23 +51,9 @@ export function move(advance = true)
 
     
 
-    // previousText = (currentText + (advance ? 1: -1) + answers.length) % answers.length;
-    // previousId = answers[previousText].word;
-
-    // previousDefinition = (currentDefinition + (advance ? 1 : -1) + answers.length) % answers.length;
-    // previousIdB = answers[previousIdB].definition;
-
-    
-
-    // previousText = (currentText + (advance ? 1: -1) + answers.length) % answers.length;
-    // previousId = answers[previousText].word;
-
-    // previousDefinition = (currentDefinition + (advance ? 1 : -1) + answers.length) % answers.length;
-    // previousIdB = answers[previousIdB].definition;
     log();
 }
 
-export function log()
 export function log()
 {
     console.log("Word: " + currentText,
