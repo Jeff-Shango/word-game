@@ -5,8 +5,10 @@
   "main": "answers.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -o -c-1"
-  },
+    "start": "http-server -o -c-1",
+    "build": "echo 'No build steps required for a basic HTML/JS project'"
+  }
+  ,
   "repository": {
     "type": "module",
     "url": "git+https://github.com/Jeff-Shango/word-game.git"
