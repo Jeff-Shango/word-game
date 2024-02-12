@@ -3,5 +3,3 @@
   base = "./" 
   command = "npm start"
 
-[[plugins]]
-  package = "@netlify/plugin-functions-core"  # This is required for Netlify Functions
