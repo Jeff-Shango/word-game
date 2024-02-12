@@ -1,7 +1,7 @@
 [build]
   publish = "./"  # Points to the directory where static files are located
   base = "./" 
-  command = "npm run build"
+  command = "npm start"
 
 [[plugins]]
   package = "@netlify/plugin-functions-core"  # This is required for Netlify Functions
