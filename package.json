@@ -2,7 +2,7 @@
   "name": "word-game",
   "version": "1.0.0",
   "description": "Shango's game corner",
-  "main": "answers.js",
+  "main": "./index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server -o -c-1",
