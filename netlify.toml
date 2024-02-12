@@ -1,5 +1,5 @@
 [build]
   publish = "./"  # Points to the directory where static files are located
   base = "./" 
-  command = "npm start"
+  command = "npm run build"
 
